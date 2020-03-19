@@ -8,11 +8,26 @@ import Chapter from "./components/Chapter"
 import { Image, AspectImage, AspectRatio, Card, Checkbox, Box, Label, Grid, Message, Heading } from 'theme-ui'
 import CoverSlide from "./components/CoverSlide"
 import ImageSpinner from "./components/ImageSpinner"
+import PrefetchImages from "./components/PrefetchImages"
 
 
 export const theme = themes.dark
 
-<Header><p style={{ zIndex: 6}}>Yurko Turskiy – Web Developer & Designer</p></Header>
+export const images = [
+ "https://drive.google.com/uc?id=10iTBcwwXZo9yLSnsmAC8APdYkPdGU3PS",
+ "https://drive.google.com/uc?id=1X9vuJRkf4aMIwDnnIaQFFSYXJM6hP_tO",
+ "https://drive.google.com/uc?id=1PSRE3ougqoNMV481_HfT8y2N-GMwfq3b",
+ "https://drive.google.com/uc?id=1WC6OokGxvTiffWglURZ3SflOp4lsa3UM",
+ "https://drive.google.com/uc?id=1RnI_MHpWinrKUT-Qlb_dxPwD9gXWvbUE",
+ "https://drive.google.com/uc?id=1Co8vX42yrjv8P4vAnwKVmWwYv4519uax",
+ "https://drive.google.com/uc?id=17SANu8RFdfkKw9vy5GbB3ZC3So6mziPy"
+] 
+
+<Header>
+  <p style={{ zIndex: 6}}>Yurko Turskiy – Web Developer & Designer</p>
+  <PrefetchImages images={images} />
+</Header>
+
 
 <Heading>Brosko – Online Magazine. Startup.</Heading>
 
@@ -35,11 +50,11 @@ Year 2012 📍 Kyiv, Ukraine.
 
 ---
 
-<ImageSpinner style={{ width: '96%', maxWidth: "840px"}} src="https://drive.google.com/uc?id=10iTBcwwXZo9yLSnsmAC8APdYkPdGU3PS" />
+<ImageSpinner style={{ width: '96%', maxWidth: "840px"}} src={images[0]} />
 
 ---
 
-<ImageSpinner style={{ width: '96%', maxWidth: "640px"}} src="https://drive.google.com/uc?id=1X9vuJRkf4aMIwDnnIaQFFSYXJM6hP_tO" />
+<ImageSpinner style={{ width: '96%', maxWidth: "640px"}} src={images[1]} />
 
 ---
 
@@ -60,23 +75,23 @@ Year 2012 📍 Kyiv, Ukraine.
 
 ---
 
-<ImageSpinner style={{ height: '100%', maxHeight: "906px"}} src="https://drive.google.com/uc?id=1PSRE3ougqoNMV481_HfT8y2N-GMwfq3b" />
+<ImageSpinner style={{ height: '100%', maxHeight: "906px"}} src={images[2]} />
 
 ---
 
-<ImageSpinner style={{ width: '96%', maxWidth: "1280px"}} src="https://drive.google.com/uc?id=1WC6OokGxvTiffWglURZ3SflOp4lsa3UM" />
+<ImageSpinner style={{ width: '96%', maxWidth: "1280px"}} src={images[3]} />
 
 ---
 
-<ImageSpinner style={{ width: '96%', maxWidth: "1280px"}} src="https://drive.google.com/uc?id=1RnI_MHpWinrKUT-Qlb_dxPwD9gXWvbUE" />
+<ImageSpinner style={{ width: '96%', maxWidth: "1280px"}} src={images[4]} />
 
 ---
 
-<ImageSpinner style={{ width: '96%', maxWidth: "1280px"}} src="https://drive.google.com/uc?id=1Co8vX42yrjv8P4vAnwKVmWwYv4519uax" />
+<ImageSpinner style={{ width: '96%', maxWidth: "1280px"}} src={images[5]} />
 
 ---
 
-<ImageSpinner style={{ width: '96%', maxWidth: "1280px"}} src="https://drive.google.com/uc?id=17SANu8RFdfkKw9vy5GbB3ZC3So6mziPy" />
+<ImageSpinner style={{ width: '96%', maxWidth: "1280px"}} src={images[6]} />
 
 ---
 
