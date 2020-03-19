@@ -1,0 +1,98 @@
+import { themes } from 'mdx-deck'
+import myTheme from "./theme"
+import Logo from "./components/Logo"
+import { Header } from "mdx-deck"
+import BroskoLogoSVG from "./components/BroskoLogoSVG"
+import BroskoLogoGridSVG from "./components/BroskoLogoGridSVG"
+import Chapter from "./components/Chapter"
+import { Image, AspectImage, AspectRatio, Card, Checkbox, Box, Label, Grid, Message, Heading } from 'theme-ui'
+import CoverSlide from "./components/CoverSlide"
+import ImageSpinner from "./components/ImageSpinner"
+
+
+export const theme = themes.dark
+
+<Header><p style={{ zIndex: 6}}>Yurko Turskiy – Web Developer & Designer</p></Header>
+
+<Heading>Brosko – Online Magazine. Startup.</Heading>
+
+Year 2012 📍 Kyiv, Ukraine.
+
+<h1 style={{position: "absolute", bottom: 10 }}>👉</h1>
+
+---
+
+<Box
+  p={1}
+  sx={{
+    width: "80%",
+    maxWidth: "840px"
+  }}
+  color='white'
+  bg='black'>
+  The main idea during creation of the logotype was to combine traditions of ancient cyrillic letters with modern serif typeface.
+</Box>
+
+---
+
+<ImageSpinner style={{ width: '96%', maxWidth: "840px"}} src="https://drive.google.com/uc?id=10iTBcwwXZo9yLSnsmAC8APdYkPdGU3PS" />
+
+---
+
+<ImageSpinner style={{ width: '96%', maxWidth: "640px"}} src="https://drive.google.com/uc?id=1X9vuJRkf4aMIwDnnIaQFFSYXJM6hP_tO" />
+
+---
+
+<Box
+  p={1}
+  sx={{
+    width: ["100%", "80%", "80%"],
+    maxWidth: "840px"
+  }}
+  color='white'
+  bg='black'>
+<BroskoLogoGridSVG/>
+</Box>
+
+---
+
+<BroskoLogoSVG/>
+
+---
+
+<ImageSpinner style={{ height: '100%', maxHeight: "906px"}} src="https://drive.google.com/uc?id=1PSRE3ougqoNMV481_HfT8y2N-GMwfq3b" />
+
+---
+
+<ImageSpinner style={{ width: '96%', maxWidth: "1280px"}} src="https://drive.google.com/uc?id=1WC6OokGxvTiffWglURZ3SflOp4lsa3UM" />
+
+---
+
+<ImageSpinner style={{ width: '96%', maxWidth: "1280px"}} src="https://drive.google.com/uc?id=1RnI_MHpWinrKUT-Qlb_dxPwD9gXWvbUE" />
+
+---
+
+<ImageSpinner style={{ width: '96%', maxWidth: "1280px"}} src="https://drive.google.com/uc?id=1Co8vX42yrjv8P4vAnwKVmWwYv4519uax" />
+
+---
+
+<ImageSpinner style={{ width: '96%', maxWidth: "1280px"}} src="https://drive.google.com/uc?id=17SANu8RFdfkKw9vy5GbB3ZC3So6mziPy" />
+
+---
+
+<Grid
+  gap={2}
+  columns={[2, '1fr 2fr']}>
+  <Box bg='primary'>1</Box>
+  <Box bg='muted'>Brand</Box>
+  <Box bg='primary'>1</Box>
+  <Box bg='muted'>Website</Box>
+  <Box bg='primary'>1</Box>
+  <Box bg='muted'>Website</Box>
+</Grid>
+
+
+---
+
+## The End
+

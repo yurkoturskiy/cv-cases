@@ -1,0 +1,22 @@
+{
+  "name": "presentations",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "mdx-deck brosko.mdx",
+    "build": "mdx-deck build brosko.mdx",
+    "tusostart": "mdx-deck tuso.mdx",
+    "tusobuild": "mdx-deck build tuso.mdx",
+    "help": "mdx-deck"
+  },
+  "author": "guandjoy",
+  "license": "ISC",
+  "devDependencies": {
+    "mdx-deck": "^4.1.1"
+  },
+  "dependencies": {
+    "primitivo-svg": "^0.1.1-alpha.1",
+    "theme-ui": "^0.3.1"
+  }
+}
