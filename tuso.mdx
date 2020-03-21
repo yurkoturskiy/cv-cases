@@ -1,26 +1,73 @@
 import PrefetchImages from "./components/PrefetchImages"
+import ImageSpinner from "./components/ImageSpinner"
 import { themes } from 'mdx-deck'
 
 export const images = [
- "https://drive.google.com/uc?id=10iTBcwwXZo9yLSnsmAC8APdYkPdGU3PS",
- "https://drive.google.com/uc?id=1X9vuJRkf4aMIwDnnIaQFFSYXJM6hP_tO",
- "https://drive.google.com/uc?id=1PSRE3ougqoNMV481_HfT8y2N-GMwfq3b",
- "https://drive.google.com/uc?id=1WC6OokGxvTiffWglURZ3SflOp4lsa3UM",
- "https://drive.google.com/uc?id=1RnI_MHpWinrKUT-Qlb_dxPwD9gXWvbUE",
- "https://drive.google.com/uc?id=1Co8vX42yrjv8P4vAnwKVmWwYv4519uax",
- "https://drive.google.com/uc?id=17SANu8RFdfkKw9vy5GbB3ZC3So6mziPy"
+ "https://drive.google.com/uc?id=1HQGimHkikV7JPNvNfYHJBTMKbm8Uyr5m",
+ "https://drive.google.com/uc?id=1uRGv82hXRopaGaMTqvj4Dcl7HDOPhmMc",
+ "https://drive.google.com/uc?id=1k5d7sA5OTQfEbDW3ZbgccCagmbJv4G6J",
+ "https://drive.google.com/uc?id=13h5WEoN1IRyd7NIKeCeSXwAUvohgDjCu",
+ "https://drive.google.com/uc?id=1mwz6uTVCLgZHVrfD6QeSVj0ROOnpfK9D",
+ "https://drive.google.com/uc?id=1gsdJCF_h98dVV3XGaibXwVhWRQ3y-pO0",
 ] 
 
-export const theme = themes.book
+export const theme = { ...themes.book, styles: {} }
 
 <Header>
-  <p style={{ zIndex: 6}}>Yurko Turskiy – Web Developer & Designer</p>
+  <p style={{ zIndex: 6, position: "absolute", left: "64px" }}>Yurko Turskiy – Web Developer & Designer</p>
   <PrefetchImages images={images} />
 </Header>
 
-Something
+# Tuso – Jewelry Boutique
+Year 2013 📍 Kyiv, Ukraine.
 
 ---
 
-ololo
+<ImageSpinner style={{ width: '96%', maxWidth: "1360px", borderRadius: "24px" }} src={images[0]} alt="3d composition" />
 
+---
+
+<ImageSpinner style={{ width: '96%', maxWidth: "720px", borderRadius: "24px" }} src={images[1]} alt="3d clock render" />
+
+---
+
+<video autoPlay muted controls loop style={{ width: "100%", maxWidth: "960px" }}>
+  <source src="https://yurko-mdx-decks.s3.eu-central-1.amazonaws.com/loop_01.mp4" type="video/mp4" />
+  Sorry, your browser doesn't support embedded videos.
+</video>
+
+---
+
+<video autoPlay muted controls loop style={{ width: "100%", maxWidth: "960px" }}>
+  <source src="https://yurko-mdx-decks.s3.eu-central-1.amazonaws.com/loop_02.mp4" type="video/mp4" />
+  Sorry, your browser doesn't support embedded videos.
+</video>
+
+---
+
+<video autoPlay muted controls loop style={{ width: "100%", maxWidth: "960px" }}>
+  <source src="https://yurko-mdx-decks.s3.eu-central-1.amazonaws.com/loop_03.mp4" type="video/mp4" />
+  Sorry, your browser doesn't support embedded videos.
+</video>
+
+---
+
+<ImageSpinner style={{ width: '96%', maxWidth: "1360px", borderRadius: "8px" }} src={images[2]} alt="titul page" />
+
+---
+
+<ImageSpinner style={{ width: '96%', maxWidth: "1360px", borderRadius: "8px" }} src={images[3]} alt="titul page" />
+
+---
+
+<ImageSpinner style={{ width: '96%', maxWidth: "1360px", borderRadius: "8px" }} src={images[4]} alt="titul page" />
+
+---
+
+<ImageSpinner style={{ width: '96%', maxWidth: "1360px", borderRadius: "8px" }} src={images[5]} alt="ring page" />
+
+---
+
+## Thanks for watching😊
+
+[follow me](https://yurko.gq/)
