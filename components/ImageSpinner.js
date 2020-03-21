@@ -20,15 +20,16 @@ function ImageSpinner(props) {
 
   return (
     <>
-      <div
+      <img
+        ref={imgRef}
+        {...props}
         style={{
+          ...props.style,
           zIndex: 2,
           opacity: isLoaded ? 1 : 0,
           transition: "opacity 0.2s"
         }}
-      >
-        <img ref={imgRef} {...props} />
-      </div>
+      />
       {!isLoaded && (
         <Spinner
           duration={6000}
