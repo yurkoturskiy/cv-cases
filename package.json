@@ -8,6 +8,8 @@
     "build": "mdx-deck build brosko.mdx",
     "tusostart": "mdx-deck tuso.mdx",
     "tusobuild": "mdx-deck build tuso.mdx",
+    "stestart": "mdx-deck ste.mdx",
+    "stebuild": "mdx-deck build ste.mdx",
     "help": "mdx-deck"
   },
   "author": "guandjoy",
