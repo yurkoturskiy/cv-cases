@@ -1,8 +1,18 @@
 import { Box } from "theme-ui"
 import { themes } from 'mdx-deck'
-
+import PrefetchImages from "./components/PrefetchImages"
+import ImageSpinner from "./components/ImageSpinner"
 
 export const theme = { ...themes.swiss, styles: {} }
+
+export const images = [
+ "https://drive.google.com/uc?id=10im8tVxm2z17uZfIMKWNVu3wO861M-E-",
+ "https://drive.google.com/uc?id=1AA3B1ESLpJbnDAzVR0rX2risaYQHfdg0",
+ "https://drive.google.com/uc?id=1dlpEawkpAUGmUtB9rWPAX8lLfDlFMwaT",
+ "https://drive.google.com/uc?id=1WGAt8Tln5Fw-Q7qZ19rXGkht7ebKqZen",
+ "https://drive.google.com/uc?id=1fXpy80cdwADp4Y4IiINKxHNTXBW3Fi8r",
+ "https://drive.google.com/uc?id=1UK4J9e058OZaKA9frXMJVc38EZKQ_T23",
+] 
 
 <Header>
   <p style={{ zIndex: 6 }}>Yurko Turskiy – Web Developer & Designer</p>
@@ -25,3 +35,29 @@ export const theme = { ...themes.swiss, styles: {} }
 - 6 catalogs on all Ukrainian defence equipment
 - improved branding language
 - presentations
+
+---
+
+<ImageSpinner style={{ width: '96%', maxWidth: "1024px"}} src={images[0]} alt="STE catalogs mockup mix" />
+
+---
+
+<ImageSpinner style={{ width: '96%', maxWidth: "1024px"}} src={images[1]} alt="STE catalogs mockup mix" />
+
+---
+
+<ImageSpinner style={{ width: '96%', maxWidth: "1024px"}} src={images[2]} alt="STE catalogs mockup mix" />
+
+---
+
+<ImageSpinner style={{ width: '96%', maxWidth: "1024px"}} src={images[3]} alt="STE catalogs mockup mix" />
+
+---
+
+<ImageSpinner style={{ width: '96%', maxWidth: "1024px"}} src={images[4]} alt="STE catalogs mockup mix" />
+
+---
+
+<ImageSpinner style={{ width: '96%', maxWidth: "1024px"}} src={images[5]} alt="STE catalogs mockup mix" />
+
+
